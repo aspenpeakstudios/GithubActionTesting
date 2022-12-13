@@ -31,10 +31,10 @@ jobs:
       - run: csso ./style/main.css -o ./style/main.min.css
       - run: html-minifier --collapse-boolean-attributes --collapse-whitespace --minify-css --minify-js --minify-urls --remove-attribute-quotes --remove-comments --remove-empty-attributes --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-style-link-type-attributes --remove-tag-whitespace --use-short-doctype -o index.html index.html
 
-      # (Force) push changes to `gh-pages` branch
+      # (Force) push changes to `build` branch
       - run: |
           git config user.name aspenpeakstudios
           git config user.email aspenpeakstudios@user.noreply.github.com
           git commit -am 'Automated minify of ${{ github.sha }}'
-          git push --force -u origin master:gh-pages
+          git push --force -u origin master:build
   
