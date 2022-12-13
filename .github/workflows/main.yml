@@ -1,4 +1,4 @@
-name: Pre-Deploy - Minify JS and CSS
+name: Minify JS and CSS
 on:
   push:
     # this is the branch where you develop your site
