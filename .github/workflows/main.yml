@@ -5,6 +5,13 @@ on:
     # as discussed in the publishing sources section
     # this can change if you are using an user/organization repo
     branches: [ master ]
+    
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write  
+    
 jobs: 
   checkout-minify-push:
     runs-on: ubuntu-latest
