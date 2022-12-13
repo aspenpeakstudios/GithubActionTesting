@@ -5,9 +5,7 @@ on:
     # as discussed in the publishing sources section
     # this can change if you are using an user/organization repo
     branches: [ master ]
-jobs:
-
-  jobs:
+jobs: 
   checkout-minify-push:
     runs-on: ubuntu-latest
     steps:
